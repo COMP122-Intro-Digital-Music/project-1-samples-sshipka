@@ -3,25 +3,22 @@
     "name": "Synth 0",
     "type": "Synth",
     "settings": {
-      "detune": "3",
+      "detune": "4",
       "portamento": "0.5",
       "volume": "0",
       "oscillator": {
-        "type": "fatsquare",
+        "type": "square2",
         "phase": 0,
-        "partialCount": "0",
-        "partials": [],
-        "count": "5",
-        "spread": "20"
+        "partialCount": "2"
       },
       "envelope": {
         "attack": "0.1",
-        "attackCurve": "linear",
+        "attackCurve": "sine",
         "decay": "0.1",
-        "decayCurve": "linear",
+        "decayCurve": "exponential",
         "sustain": "0.5",
         "release": "1.5",
-        "releaseCurve": "linear"
+        "releaseCurve": "bounce"
       }
     }
   },
@@ -29,23 +26,25 @@
     "name": "Synth 1",
     "type": "Synth",
     "settings": {
-      "detune": "0",
-      "portamento": "1.5",
+      "detune": "2",
+      "portamento": "0.5",
       "volume": "0",
       "oscillator": {
-        "type": "sawtooth",
+        "type": "fattriangle",
         "phase": 0,
         "partialCount": "0",
-        "partials": []
+        "partials": [],
+        "count": "3",
+        "spread": "20"
       },
       "envelope": {
-        "attack": "0.14",
-        "attackCurve": "bounce",
+        "attack": "0.1",
+        "attackCurve": "sine",
         "decay": "0.1",
-        "decayCurve": "ripple",
+        "decayCurve": "linear",
         "sustain": "0.5",
         "release": "1.5",
-        "releaseCurve": "linear"
+        "releaseCurve": "cosine"
       }
     }
   }
